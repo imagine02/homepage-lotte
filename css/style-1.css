@@ -1,0 +1,586 @@
+@import url(hover.css);
+
+*{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+}
+body{
+   font-family:"나눔 고딕",sans-serif;
+   color:#333;
+   font-size:100%;
+   margin:0 auto;
+   /* width: 1200px; */
+}
+a {
+   text-decoration: none;
+   color: #333;
+}
+li {
+   list-style: none;
+}
+section,footer,.container {
+   position: relative;
+   width: 1200px;
+   margin: 0 auto;
+}
+
+/* header */
+
+#main_header {
+   position: absolute;
+   z-index: 99;
+   width: 100%;
+   /* margin: 0 auto; */
+   height: 190px;
+   /* border: 1px solid red; */
+   /* left: 50%; */
+   /* transform: translateX(-50%); */
+   /* background: #fff; */
+   /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);*/
+}
+#main_header > h1 {
+   position: relative;
+   top: 40px;
+   text-align: center;
+}
+.language {
+   width: 80px;
+   height: 20px;
+   padding-left: 13px;
+   font-size: 12px;
+   color: #897d71;
+   border: 1px solid #fff;
+   border-radius: 3px;
+   -webkit-appearance: none; /* 화살표 없애기 for chrome*/
+   -moz-appearance: none;    /* 화살표 없애기 for firefox*/
+   appearance: none;   
+}
+/* 로그인 메뉴 */
+#user-nav{
+   position: absolute;
+   background: #897d71;
+   width:100%;
+   height:30px;
+   /* margin: 0 auto; */
+   top:0px;
+}
+#r_usernav li{
+   /* border: 1px solid red; */
+   display: inline-block;
+   padding-left:0px;
+   /* font-family: 'GoudyOlSt BT'; */
+   
+}
+#user-nav li a {
+   display: block;
+   font-size: 14px;
+   color:#aeafaf;
+}
+#r_usernav {
+   float:right;
+   /* border:1px solid red;  */
+   width:400px;
+   margin-top:3.5px;
+   margin-right: 20px;
+}
+#l_usernav {
+   float:left;
+   width: 300px;
+   /* border:1px solid red;  */
+   margin-top:3.5px;
+   margin-left: 150px;
+}
+#l_usernav > ul > li{
+   display: inline-block;
+}
+#r_usernav li {
+   padding-right:20px;
+}
+
+#clear{
+   clear: both;
+   
+}
+
+/* 메인메뉴 */
+#gnb{
+   padding-top: 30px;
+   /* border: 1px solid red; */
+   position: relative;
+   width: 100%;
+   height: 92px;
+   text-align: center;  
+}
+.depth1 li{
+   /* position: relative; */
+   padding-left: 20px;
+   font-size:14px;
+   display:inline-block;
+   margin-left:5px;
+   margin-right:5px;
+   /* border: 1px solid red; */
+}
+
+.depth1 > li > a {
+   margin-right:40px;
+   line-height: 58px;
+   font-size: 1.1em;
+   /* border: 1px solid #897d71; */
+}
+#gnb .depth1{
+   position: absolute;
+   width:100%;
+   /* border: 1px solid red; */
+   height: 100%;
+}
+
+#gnb > .depth1 > li > a:hover {
+   color: #897d71;
+}
+.depth2 {
+   overflow: hidden;
+   position: absolute;
+   /* border: 1px solid red; */
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 0px;
+   background: #fff;
+}
+
+.depth2 li {
+   margin: 0 auto;
+   width:200px;
+   /* border:1px solid red; */
+   margin-top:30px;
+
+}
+.depth2 > li > a{
+   font-size: 1.2em;
+}
+.depth2 > .menu_point > a{
+   
+   background: black;
+   color: white;
+   font-weight: bold;
+}
+
+/* 콘텐츠 영역 */
+
+#content{
+   /* border: 1px solid red; */
+   position: absolute;
+   top: 190px;
+   width: 100%;
+   /* height: 1500px; */
+   clear: both;
+}
+/* 비쥬얼 베너 */
+#content .main-visual { 
+   position: absolute;
+   /* top:190px; */
+   /* border:1px solid red; */
+   width: 100%;
+   /* 꽉찬 폭 : 100% 랑 같음*/
+   height: 100%;
+   overflow: hidden;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   /* display: flex; */
+}
+.bx-wrapper{
+   border:none!important;
+   box-shadow: none!important;
+}
+
+/* 예약배너 */
+.reservation{
+   position: relative;
+   /* bottom:150px; */
+   /* border:1px solid red; */
+}
+#reservation-banner{
+   position: relative;
+   margin: 0 auto;
+   width: 1200px;
+}
+#reservation-banner.fixed{
+   position: fixed;
+   left: 232px;
+   bottom: 0px;
+   z-index:99;
+   /* animation: ease-in-out; */
+
+}
+#reservation-banner fieldset{
+   background: white;
+   height: 70px;
+}
+#reservation-banner .search{
+   margin-top: 18px;
+   margin-left: 30px;
+   /* border: 1px solid red;  */
+   width: 250px;
+   background: white;
+}
+.reservation li{
+   /* border: 1px solid red; */
+   display: inline-block;
+}
+#city-hotel{
+   width: 100%;
+   -webkit-appearance: none;
+   /* 화살표 없애기 for chrome*/
+   -moz-appearance: none;
+   /* 화살표 없애기 for firefox*/
+   appearance: none;
+   border: 1px solid white;
+   font-size:20px;
+   padding-left:10px;
+   height: 30px;
+}
+#city-hotel > .select1{
+   font-size:10px;
+   
+}
+#city-hotel > .area{
+   font-size:16px;
+   background: #897d71;
+   color:white;
+   /* border: 1px solid red; */
+}
+#city-hotel option {
+   font-size:12px;
+
+}
+.reservation .check-in {
+   position: relative;
+   width:200px;
+   height: 30px;
+   font-size:21px; 
+}
+.reservation .check-in p i{
+   /* float:right; */
+   padding-left: 90px;
+
+}
+.reservation .check-out p i{
+   /* float: right; */
+   padding-left: 70px;
+
+}
+.reservation .check-out {
+   position: relative;
+   width: 200px;
+   height: 30px;
+   font-size: 21px;
+}
+.adult, .child, .baby{
+   font-size: 21px;
+   width: 110px;
+   height: 30px;
+   margin-right: 10px;
+   /* padding-right: 10px */
+}
+.reservation .menu_arrow{
+   padding-left: 10px;
+}
+
+select::-ms-expand {
+   display: none;            /* 화살표 없애기 for IE10, 11*/
+}
+#content #promotion
+{
+   width:1200px;
+   height:900px;
+   margin: 0 auto;
+   border:1px solid red;
+   /* overflow: hidden; */
+}
+#content #promotion .p_title {
+   /* border:1px solid blue; */
+   width:100%;
+}
+#content #promotion .p_title h1,
+#content #rewards .r_title h1,
+#content #experience .pl_title h1,
+#content #sns .s_title h1 {
+   position: relative;
+   text-align: center;
+   font-size:2.8em;
+   margin-top:10px;
+   color:#3e2b2e;
+   font-family: 'Noto Serif SC', 
+   sans-serif;
+   letter-spacing: 0.2em;
+}
+.line{
+   display:block;
+   border: 0.5px solid rgba(137,125,113,0.3);
+   width: 200px;
+   margin:0 auto;
+   margin-top:10px;
+   margin-bottom:55px;
+}
+#content #promotion .p_title h2,
+#content #rewards .r_title h2,
+#content #experience .pl_title h2,
+#content #sns .s_title h2 {
+   position: relative;
+   text-align: center;
+   font-size:1.4em;
+   bottom:40px;
+   margin-bottom: 10px;
+   color:rgba(62,43,46,0.7);
+   font-family:'Nanum Myeongjo';
+   /* border:1px solid red; */
+}
+#content #promotion .p_img{
+   width:1200px;
+   /* overflow:hidden; */
+   /* border:1px solid blue; */
+   height:730px;
+}
+#content #promotion .p_img .image-list {
+   overflow:hidden;
+}
+.p_img .image-list li{
+   display: inline-block;
+   overflow: hidden;
+}
+.p_img .image-list .first{
+   /* margin-left:10px; */
+   /* margin-right:15px; */
+}
+.p_img .image-list .second{
+   position: relative;
+   /* border:1px solid red; */
+   /* float:right; */
+   margin-left: 10px;
+   bottom:200px;
+}
+.p_img .image-list .third{
+   position: relative;
+   /* margin-left: 20px; */
+   bottom:188px;
+}
+.p_img .image-list .fourth{
+   position: relative;
+   bottom:188px;
+   margin-left: 15px;
+   
+}
+.p_img .image-list .fifth{
+   position: relative;
+   bottom:188px;
+   left:10px;
+}
+.p_img .image-list li:hover img {
+   transform: scale(1.1, 1.1);
+   transition-duration: 0.2s;
+   
+}
+#content #rewards {
+   width: 100%;
+   height: 600px;
+   top:50px;
+   margin: 0 auto;
+   border: 1px solid red;
+   /* overflow: hidden; */
+   /* background: #e7e6e4; */
+}
+#rewards .reward-content{
+   width:1200px;
+   overflow: hidden;
+   height:390px;
+   margin: 0 auto;
+   border:1px solid red;
+   margin-bottom: 20px;
+}
+#rewards .join{
+   position: relative;
+   left:15%;
+   bottom:15%;
+   width:350px;
+   height:40px;
+   border: 1px solid #242321;
+   border-radius: 5px;
+}
+#rewards .join h1{
+   font-size:1em;
+   padding-top:7px;
+   text-align: center;
+}
+#content #experience {
+   width: 1200px;
+   height: 950px;
+   top: 50px;
+   margin: 0 auto;
+   /* border: 1px solid red; */
+   /* overflow: hidden; */
+   /* background: #e7e6e4; */
+}
+#experience .videoxtext{
+   width:47.5%;
+   margin: 0 auto;
+   float: left;
+   height:34%;
+   overflow: hidden;
+   border:1px solid #706e74;
+   margin-top: 15px;
+   margin-left:20px;;
+}
+
+#experience .vtext {
+   /* border:1px solid red; */
+   position: relative;
+   right:20px;
+   width:47%;
+   height:360px;
+   top:10px;
+   float:right;
+
+}
+.vtext .vtext-1 li h1{
+   font-size:2em;
+   /* border:1px solid red; */
+   padding:5px;
+   color:#3e2b2e;
+}
+.vtext .vtext-1 li .vtext-2{
+   /* border:1px solid red; */
+   font-size:14px;
+   padding:10px;
+   /* margin-top:5px; */
+   margin-bottom:10px;
+}
+.vtext .vtext-1 li .vtext-3{
+   padding:5px;
+   font-size: 12px;
+   /* border:1px solid red; */
+}
+.vtext .vtext-1 li .vtext-3:last-child {
+   /* margin-bottom: 10px; */
+   border-bottom: 1px solid #ccc;
+}  
+.vtext .recommend li h3 {
+   font-size: 12px;
+   color:#333;
+   padding:8px;
+   padding-left: 10px;
+}
+.vtext .recommend li {
+   display: inline;
+}
+.vtext .recommend li img{
+   /* border:1px solid red; */
+   margin-left: 18px;
+   /* margin-top: px; */
+   /* margin-right: 10px; */
+}
+#experience .othertext {
+  position: relative;
+  top:10px;
+  left:10px;
+}
+#experience .othertext .snip1{
+   position: relative;
+   float:left;
+   /* border:1px solid red; */
+}
+#experience .othertext .snip1:last-child{
+   position: relative;
+   float:right;
+   bottom:22px;
+   right:13px;
+}
+#content #sns {
+   position: relative;
+   width: 1200px;
+   height: 1500px;
+   top: 25px;
+   margin: 0 auto;
+   border: 1px solid red;
+   /* overflow: hidden; */
+   /* background: #e7e6e4; */
+}
+.sns_photo{
+   /* top:140px; */
+   width:1000px;
+   height:800px;
+   margin:0 auto;
+   border:1px solid red;
+   
+}
+.sns_photo > li {
+   /* border:1px solid red; */
+   float:left;
+   width:240px;
+   height:240px;
+   overflow:hidden;
+}
+.sns_photo > li img {
+   width:100%;
+   /* display: block; */
+}
+.sns_photo .s0{
+   position: relative;
+   left:2%;
+   top:25%;
+}
+.sns_photo .s1{
+   position: relative;
+   left:2%;
+   top: 10%;
+   opacity: 0.9;
+}
+.sns_photo .s2{
+   position: relative;
+   right:22.1%;
+   top:40%;
+   opacity: 0.9;
+}
+.sns_photo .s3{
+   position: relative;
+   right:22.1%;
+   top:25%;
+   opacity: 0.9;
+}
+.sns_photo .s4{
+   position: relative;
+   left:2%;
+   top:25%;
+   opacity: 0.9;
+}
+.sns_photo .s5 {
+   position: relative;
+   left:2%;
+   top: 40%;
+   opacity: 0.9;
+}
+.sns_photo .s6 {
+   position: relative;
+   top: 25%;
+   left:2%;
+   opacity: 0.9;
+}
+.sns_photo .s7 {
+   position: relative;
+   top:11%;
+   left:2%;
+   opacity: 0.9;
+}
+.sns_photo .s1:hover,
+.sns_photo .s2:hover,
+.sns_photo .s3:hover,
+.sns_photo .s4:hover,
+.sns_photo .s5:hover,
+.sns_photo .s6:hover,
+.sns_photo .s7:hover
+{
+   border: 1px solid red;
+   opacity: 1;
+}
+

@@ -1,0 +1,371 @@
+*{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+}
+body{
+   font-family:"나눔 고딕",sans-serif;
+   color:#333;
+   font-size:100%;
+   margin:0 auto;
+   /* width: 1200px; */
+}
+a {
+   text-decoration: none;
+   color: #333;
+}
+li {
+   list-style: none;
+}
+section,footer,.container {
+   position: relative;
+   width: 1200px;
+   margin: 0 auto;
+}
+
+/* header */
+
+#main_header {
+   position: absolute;
+   z-index: 98;
+   width: 100%;
+   /* margin: 0 auto; */
+   height: 150px;
+   /* border: 1px solid red; */
+   /* background: #897d71; */
+   background: #897d71;
+   left: 50%;
+   transform: translateX(-50%);
+   /* background: #fff; */
+   /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+}
+#main_header{
+   top:-200px;
+   animation-name:header;
+   animation-duration: 0.8s;
+   animation-delay: 0.5s;
+   animation-fill-mode:forwards;
+   animation-timing-function: ease-in-out;
+}
+@keyframes header{
+   from{
+      top:-100px;
+      opacity:0;
+   }
+  
+   to{
+      top:0;
+      opacity:1;
+   }
+}
+#main_header > h1 {
+   position: relative;
+   top: 20px;
+   text-align: center;
+}
+.language {
+   width: 80px;
+   height: 20px;
+   padding-left: 13px;
+   font-size: 12px;
+   color: #897d71;
+   border: 1px solid #fff;
+   border-radius: 3px;
+   -webkit-appearance: none; /* 화살표 없애기 for chrome*/
+   -moz-appearance: none;    /* 화살표 없애기 for firefox*/
+   appearance: none;   
+}
+/* 로그인 메뉴 */
+#user-nav{
+   position: absolute;
+   background: #897d71;
+   width:100%;
+   height:30px;
+   /* margin: 0 auto; */
+   top:0px;
+}
+#r_usernav li{
+   /* border: 1px solid red; */
+   display: inline-block;
+   padding-left:0px;
+   /* font-family: 'GoudyOlSt BT'; */
+   
+}
+#user-nav li a {
+   display: block;
+   font-size: 14px;
+   color:#3e2b2e;
+}
+#r_usernav {
+   float:right;
+   /* border:1px solid red;  */
+   width:400px;
+   margin-top:3.5px;
+   margin-right: 20px;
+}
+#l_usernav {
+   float:left;
+   width: 300px;
+   /* right: 200px; */
+   /* border:1px solid red;  */
+   margin-top:3.5px;
+   margin-left: 150px;
+}
+#l_usernav > ul > li{
+   display: inline-block;
+}
+#r_usernav li {
+   padding-right:20px;
+}
+
+#clear{
+   clear: both;
+   
+}
+
+/* 메인메뉴 */
+#gnb{
+   /* padding-top: 30px; */
+   /* border: 1px solid red; */
+   position: relative;
+   bottom: 20px;
+   width: 100%;
+   height: 49%;
+   text-align: center;
+   z-index: 99;
+}
+.depth1 li{
+   /* text-align: center; */
+   padding-left: 20px;
+   font-size:14px;
+   display:inline-block;
+   /* border: 1px solid red; */
+}
+
+.depth1 > li > a {
+   /* text-align: center; */
+   margin-right:40px;
+   line-height: 58px;
+   font-size: 1.2em;
+   /* font-weight: bold; */
+   color: white;
+   /* border: 1px solid #897d71; */
+}
+#gnb .depth1{
+   position: absolute;
+   width:100%;
+   /* border: 1px solid red; */
+   height: 83%;
+}
+
+#gnb > .depth1 > li > a:hover {
+   color: #3e2b2e;
+   font-weight: bold;
+}
+.depth2 {
+   overflow: hidden;
+   position: absolute;
+   /* border: 1px solid red; */
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 0px;
+   background: rgba(255,255,255,0.7);
+   /* text-align: center; */
+}
+
+.depth2 li {
+   /* text-align: center; */
+   margin: 0 auto;
+   width:200px;
+   /* border:1px solid red; */
+   margin-top:30px;
+
+}
+
+.depth2 > li > a{
+   font-size: 1.2em;
+}
+.depth2 > .menu_point > a{
+   
+   /* background: black; */
+   color: red;
+   font-weight: bold;
+   padding-right: 10px;
+}
+/* 콘텐츠 영역 */
+
+#content {
+   /* border: 1px solid red; */
+   position: relative;
+   margin: 0 auto;
+   top: 150px;
+   width: 1200px;
+   /* height: 1000px; */
+   /* margin-top: 120px; */
+   clear: both;
+}
+#intro{
+   /* border: 1px solid red; */
+}
+#intro h2
+{
+position: relative;
+text-align: center;
+font-size:2.4em;
+/* margin-top:10px; */
+color:#3e2b2e;
+font-family: 'Nanum Myeongjo',
+sans-serif;
+letter-spacing: 0.2em;
+padding-top: 210px;
+padding-bottom: 30px;
+}
+
+#intro p{
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 40px;
+   line-height: 35px;
+   font-size: 1.2em;
+   color: rgb(66, 65, 65);
+   /* border: 1px solid red; */
+}
+#intro .nav_1 {
+   float: right;
+   font-size: 12px;
+   /* border: 1px solid red; */
+   position: relative;
+   top: 130px;
+}
+
+#fixed_top{
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   background: #897d71;
+   position: fixed;
+   z-index: 999;
+   bottom: 10px;
+   right: 75px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+/* footer */
+footer{
+   position: absolute;
+   top: 4200px;
+   width: 100%;
+   min-width: 1070px;
+   height: 500px;
+   /* border: 1px solid red; */
+   background: #897d71;
+}
+.footer_boxline{
+   position: relative;
+   margin: 0 auto;
+   width: 1200px;
+   max-width: 1200px;
+   height: 400px;
+   /* border: 1px solid red; */
+}
+.footer_left{
+   float: left;
+   width: 50%;
+   padding-right: 18%;
+   height: 400px;
+   /* border: 1px solid red; */
+   text-align: center;
+   font-family: 'Noto Serif SC', 
+   sans-serif;
+}
+.footer_left > h2{
+   font-size: 2em;
+   color: #3e2b2e;
+   margin-bottom: 15px;
+   margin-top: 20px;
+}
+.footer_left > h3{
+   color: #3e2b2e;
+   margin-top: 10px;
+}
+.footer_left > p > a{
+   color: #3e2b2e;
+}
+.sns_icon{
+   text-align: center;
+   /* border: 1px solid red; */
+}
+.sns_icon > li{
+   display: inline-block;
+}
+.footer_line{
+   position: relative;
+   /* margin-top: 200px; */
+   display: block;
+   width: 380px;
+   /* left: ; */
+   margin-top: 10px;
+   border: 0.5px solid #3e2b2e;
+}
+.down_icon{
+   margin-top: 20px;
+}
+.footer_right{
+   float: right;
+   padding-left: 10%;
+   width: 50%;
+   height: 400px;
+   /* border: 1px solid red; */
+   text-align: center;
+}
+.footer_right > ul{
+   /* text-align: center; */
+   display: block;
+   /* margin-left: 70px; */
+}
+.footer_right > ul > li > a{
+   color: #3e2b2e;
+}
+.footer_right > ul > li > a > span{
+   font-size: 1.2em;
+   font-weight: bold;
+   line-height: 90px;
+}
+.f_rup{
+   /* border: 1px solid red; */
+   float: left;
+   width: 50%;
+   height: 200px;
+   /* margin-top: 100px; */
+}
+.f_rdwn{
+   /* border: 1px solid red; */
+   float: left;
+   width: 50%;
+   height: 200px;
+   
+}
+.f_rdwn li{
+   padding-left: 45%;
+}
+.f_rup li{
+   padding-left: 45%;
+}
+.footer_btm{
+   float: left;
+   text-align: center;
+   width: 100%;
+   height: 100px;
+   background: #222;
+   /* border: 1px solid blue; */
+}
+.footer_btm > p{
+   color: #999;
+   font-weight: lighter;
+   font-size: 12px;
+   padding-top: 20px;
+}
+.footer_btm > p > a{
+   color: #999;
+}

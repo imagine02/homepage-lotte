@@ -1,0 +1,451 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family:"나눔 고딕",sans-serif;
+  color:#333;
+  font-size:100%;
+  margin:0 auto;
+  /* width: 1200px; */
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+li {
+  list-style: none;
+}
+section,footer,.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+
+#main_header {
+  position: absolute;
+  z-index: 98;
+  width: 100%;
+  /* margin: 0 auto; */
+  height: 150px;
+  /* border: 1px solid red; */
+  /* background: #897d71; */
+  background: #897d71;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: #fff; */
+  /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+}
+#main_header{
+  top:-200px;
+  animation-name:header;
+  animation-duration: 0.8s;
+  animation-delay: 0.5s;
+  animation-fill-mode:forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes header{
+  from{
+     top:-100px;
+     opacity:0;
+  }
+ 
+  to{
+     top:0;
+     opacity:1;
+  }
+}
+#main_header > h1 {
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+.language {
+  width: 80px;
+  height: 20px;
+  padding-left: 13px;
+  font-size: 12px;
+  color: #897d71;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  -webkit-appearance: none; /* 화살표 없애기 for chrome*/
+  -moz-appearance: none;    /* 화살표 없애기 for firefox*/
+  appearance: none;   
+}
+/* 로그인 메뉴 */
+#user-nav{
+  position: absolute;
+  background: #897d71;
+  width:100%;
+  height:30px;
+  /* margin: 0 auto; */
+  top:0px;
+}
+#r_usernav li{
+  /* border: 1px solid red; */
+  display: inline-block;
+  padding-left:0px;
+  /* font-family: 'GoudyOlSt BT'; */
+  
+}
+#user-nav li a {
+  display: block;
+  font-size: 14px;
+  color:#3e2b2e;
+}
+#r_usernav {
+  float:right;
+  /* border:1px solid red;  */
+  width:400px;
+  margin-top:3.5px;
+  margin-right: 20px;
+}
+#l_usernav {
+  float:left;
+  width: 300px;
+  /* right: 200px; */
+  /* border:1px solid red;  */
+  margin-top:3.5px;
+  margin-left: 150px;
+}
+#l_usernav > ul > li{
+  display: inline-block;
+}
+#r_usernav li {
+  padding-right:20px;
+}
+
+#clear{
+  clear: both;
+  
+}
+
+/* 메인메뉴 */
+#gnb{
+  /* padding-top: 30px; */
+  /* border: 1px solid red; */
+  position: relative;
+  bottom: 20px;
+  width: 100%;
+  height: 49%;
+  text-align: center;
+  z-index: 99;
+}
+.depth1 li{
+  /* text-align: center; */
+  padding-left: 20px;
+  font-size:14px;
+  display:inline-block;
+  /* border: 1px solid red; */
+}
+
+.depth1 > li > a {
+  /* text-align: center; */
+  margin-right:40px;
+  line-height: 58px;
+  font-size: 1.2em;
+  /* font-weight: bold; */
+  color: white;
+  /* border: 1px solid #897d71; */
+}
+#gnb .depth1{
+  position: absolute;
+  width:100%;
+  /* border: 1px solid red; */
+  height: 83%;
+}
+
+#gnb > .depth1 > li > a:hover {
+  color: #3e2b2e;
+  font-weight: bold;
+}
+.depth2 {
+  overflow: hidden;
+  position: absolute;
+  /* border: 1px solid red; */
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0px;
+  background: rgba(255,255,255,0.7);
+  /* text-align: center; */
+}
+
+.depth2 li {
+  /* text-align: center; */
+  margin: 0 auto;
+  width:200px;
+  /* border:1px solid red; */
+  margin-top:30px;
+
+}
+
+.depth2 > li > a{
+  font-size: 1.2em;
+}
+.depth2 > .menu_point > a{
+  
+  /* background: black; */
+  color: red;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+/* 서브메뉴 */
+#fixed_top {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #897d71;
+  position: fixed;
+  z-index: 99;
+  bottom: 10px;
+  right: 75px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+#hotel_choice h2
+ {
+   position: relative;
+   text-align: center;
+   font-size:2.4em;
+   margin-top:10px;
+   color:#3e2b2e;
+   font-family: 'Nanum Myeongjo',
+   sans-serif;
+   letter-spacing: 0.2em;
+}
+
+/* 예약하기 */
+#sub_banner{
+   position: relative;
+   width: 1200px;
+   margin: 0 auto;
+   top:210px;
+   
+ }
+ .slider{
+   width: 1200px;
+   /* border: 1px solid red; */
+   overflow: hidden; /*이미지 자름(클리핑처리)*/
+   text-align: center;
+   margin-bottom: 190px;
+ }
+  /* 움직이는 틀(roll) */
+ .bxslider{
+   width: 100%;
+ 
+ }
+ .bxslider img{
+   width: 100%;
+   text-align: center;
+ }
+ .bx-wrapper{
+   border:none!important;
+   box-shadow: none!important;
+}
+ /* .slider_indicator2{ margin-top: 20px;}
+ .slider_indicator2 li{ 
+   display: inline-block;
+   } */
+ /* .slider_indicator2 a{
+   display: inline-block;
+   background: #999;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+ } */
+ /* .slider_indicator2 a.active{  */
+    /*active는 현재이미지*/
+   /* background: #444; */
+ /* } */
+/* #content{
+   background-color: #bdb8b5;
+   width: 1200px;
+   text-align: center;
+   margin: 0 auto;
+} */
+
+/* 호텔예약하기 */
+
+#hotel_choice{
+position: relative;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+z-index: 9; /* 메뉴의 레이어 최상위 */
+border: 1px solid red;
+width: 1200px;
+/* height: 3000px; */
+margin: 0 auto;
+margin-bottom: 20px;
+/* background-color: #bdb8b5; */
+}
+section h2{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.contry_menu{
+  background-color: #333;
+
+}
+.contry_menu li{
+  display: inline-block;
+  /* border: 1px solid red; */
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.contry_menu li a{
+  color: #fff;
+  font-size: 18px;
+}
+.hotel_list{
+  text-align: center;
+  height: 300px;
+  background-color: rgba(170, 169, 169, 0.1);
+  margin-bottom: 30px;
+
+}
+.hotel_list li{
+  float: left;
+  width: 25%;
+  line-height: 40px;
+ 
+  
+}
+#hotel_choice .hotel_list{
+  /* border: 1px solid red; */
+}
+li{
+  margin-top: 10px;
+}
+.choice_list1 li{
+  display: inline-block;ext-align: left;
+  /* border: 1px solid red; */
+  }
+/* 호텔선택목록 탭버튼 화면표시 */
+#hotel_choice .hotel_list ul{
+  /* display: none; */
+}
+
+/* 일정선택 */
+#hotel_schedule{
+position: relative;
+text-align: center;
+padding-bottom: 10px;
+z-index: 99; /* 메뉴의 레이어 최상위 */
+border: 1px solid red;
+width: 1200px;
+margin: 0 auto;
+margin-bottom: 40px;
+}
+/* #hotel_schedule h2{
+  text-align: center;
+  border: 1px solid red;
+} */
+.schedule{
+   margin-bottom: 40px;
+   margin-top: 60px;
+}
+a{
+   text-decoration: none; /*엥커태그 없앰*/
+   /* color: #666; */
+}
+ul{
+   text-align: center;
+   font-size: 12px;
+   width: 1200px;
+   }
+
+
+.line{
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+h4{
+      margin-bottom: 20px;
+}
+/* .miner2{
+   margin-left:30px;
+} */
+.checkbtn {
+  padding: 40px;
+}
+#city_hotel .select1{
+  width: 400px;
+
+}
+.checkbtn div{
+display: inline-block;
+text-align: center;
+font-size: 10px;
+/* border: 1px solid #333; */
+}
+select{
+  margin-top: 15px;
+  width: 100px;
+  padding: 8px;
+  border-radius: 0.25em;
+}
+.information{
+top: 30px;
+}
+
+.attention{
+position: relative;
+/* border: 1px solid #333; */
+text-align: center;
+width: 1200px;
+margin: 0 auto;
+
+}
+
+.attention h1{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
+
+.attention ol{
+  text-align: left;
+  margin-left: 240px;
+  line-height: 30px;
+}
+.btnclick{
+  position: relative;
+  margin: 0 auto;
+  margin-right: 20px;
+  text-align: center;
+  width:150px;
+  height: 50px;
+  background: #bdb8b5;
+  color:white;
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+.log_popup p{ font-size: 14px;
+color : #bdb8b5;}
+
+/* 팝업 스타일 */
+.log_popup{
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  z-index: 99;
+  padding:30px 20px 30px;
+  width: 400px;
+  height: 280px;
+  /* transform: translate[-50%, -50%]; */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color : #897d71;
+  cursor:move;
+  text-align: center;
+  color:#fff;
+  display: none;
+  border-radius: 0.5em;
+}
