@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>media.html</title>
+   <style>
+      *{
+         margin: 0;
+         padding:0;
+         box-sizing: border-box;
+      }
+      section{
+         border:1px solid red;
+         padding-top: 40px;
+         padding-bottom: 40px;
+      }
+      div{
+         border:1px solid green;
+      }
+      h1,h2{
+         margin-top: 20px;
+         margin-bottom:20px;
+      }
+      .img-responsive{width:100%;}
+      /* 스크린은 컴퓨터화면 and (디바이스 크기 px)*/
+      /* 모바일(테블릿):767px 까지 */
+      @media screen and (max-width:767px) {
+         body{
+             background: pink;
+       }
+      }
+      /* 테블릿 376 ~ 1024px */
+      /* @media (min-width:376px) and (max-width:1024px){
+         body{
+            background: green;
+         }
+      } */
+
+      /* 태블릿 이상 768px 이상 */
+      @media(min-width:768px){
+         body{
+            background: yellow;
+
+         }
+         #about{
+            overflow: hidden;
+         }
+         #about .photo,
+         #about .about{
+            width:50%;
+            float:left;
+            padding:20px;
+         }
+         #map .map,
+         #map .info{
+            width:50%;
+            float:right;
+            padding:20px;
+         }
+      }
+      
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Media Query</h1>
+   </header>
+   <section id="about">
+      <div class="photo">
+         <img src="http://placeimg.com/400/400/c" alt="photo" class="img-responsive">
+      </div>
+      <div class="about">
+      <h2>about</h2>
+      <p>
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. A consequatur optio delectus sequi, dolorum obcaecati ab! Sed, nulla optio? Consequatur hic voluptates expedita quod aut ea veritatis vero accusantium ex?
+      </p>
+      </div>
+   </section>
+   <section id="map">
+      <h2>오시는길</h2>
+      <div class="map">
+         <img src="http://placeimg.com/400/400/a" alt="map" class="img-responsive" > 
+      </div>
+      <div class="info">
+         <ul>
+            <li>주소:서울시 강서구 화곡동 122</li>
+            <li>전화:010-123-1234</li>
+            <li>메일:wjdfls@hanmail.net</li>
+         </ul>
+      </div>
+   </section>
+</body>
+</html>
