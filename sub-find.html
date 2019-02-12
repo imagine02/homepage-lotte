@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>글로벌 호텔그룹 롯데호텔</title>
+   <!--외부 css 링크-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   <!-- 홈페이지 소개글 -->
+   <meta name="description" content="글로벌 호텔그룹 롯데호텔">
+   <!-- 검색 키워드 등록 -->
+   <meta name="keywords" content="글로벌호텔,롯데호텔,시그니엘,롯데리조트,롯데L7 ">
+   <!-- 나눔고딕 웹폰트 추가 -->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+   <!--Noto serif 웹폰트 추가 -->
+   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+   <!--나눔명조 웹폰트 추가-->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Serif+SC" rel="stylesheet">
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+   </script>
+   <!-- jquery UI -->
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <!--사용자 css-->
+   <link rel="stylesheet" href="css/sub-find.css">
+   <!-- <link rel="stylesheet" href="css/style.css"> -->
+   <!--사용자 스크립트-->
+   <script src='js/main.js'></script>
+   <script src='js/sub-find.js'></script>
+   <!--BXSLIDER CSS-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+   <!--Bxslider 자바스크립트 플러그인-->
+   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+</head>
+
+<body>
+<header>
+   <!-- 로고 -->
+   <div id="main_header">
+      <h1><a href="./"><img src="images/logo-test1.png" alt="main-logo" width="100"></a>
+      </h1>
+      <!-- 상단 메뉴 -->
+      <div id="user-nav">
+         <ul id="r_usernav">
+            <li><a href="#" class="">LOGIN </a></li>
+            <li><a href="#" class="">JOIN</a></li>
+            <li><a href="#" class="">MEMBERSHIP</a></li>
+            <li><a href="#" class="">RESERVATION</a></li>
+         </ul>
+         <div id="l_usernav">
+            <ul>
+
+               <li><select name="language" class="language">
+                     <option value="Korean">KOREAN</option>
+                     <option value="English">ENGLISH</option>
+                     <option value="Japanese">日本語</option>
+                     <option value="Chinese">中本語</option>
+                  </select></li>
+            </ul>
+         </div>
+         <ul id="clear">
+            <li></li>
+         </ul>
+      </div>
+
+      <!-- 메인메뉴 -->
+      <div id="gnb">
+         <ul class="depth1">
+            <li><a href="./sub-find.html">호텔찾기</a>
+               <ul class="depth2">
+                  <li><a href="#">시그니엘</a></li>
+                  <li><a href="#">롯데시티호텔</a></li>
+                  <li><a href="#">롯데호텔&리조트</a></li>
+                  <li><a href="#">L7호텔</a></li>
+                  <li class="menu_point"><a href="#">예약하기</a></li>
+               </ul>
+            </li>
+            <li><a href="#">프로모션</a>
+               <ul class="depth2">
+                  <li><a href="#">호텔패키지</a></li>
+                  <li><a href="#">룸 프로모션</a></li>
+                  <li><a href="#">호텔이벤트</a></li>
+                  <li><a href="#">스페셜 딜</a></li>
+               </ul>
+            </li>
+            <li><a href="#">웨딩&컨벤션</a>
+               <ul class="depth2">
+                  <li><a href="#">호텔웨딩</a>
+                  </li>
+                  <li><a href="#">호텔컨벤션</a>
+                  </li>
+            </li>
+         </ul>
+         </li>
+         <li><a href="./sub-comp.html">호텔소개</a>
+            <ul class="depth2">
+               <li><a href="./sub-comp.html">롯데호텔스토리</a></li>
+               <li><a href="#">브랜드소개</a></li>
+               <li><a href="#">뉴스</a></li>
+               <li><a href="#">채용</a></li>
+            </ul>
+         </li>
+         </ul>
+
+      </div>
+   </div>
+</header>
+   
+   <!-- 메인 콘텐츠 영역 -->
+   <div id="content">
+      <div id="fixed_top"><a href="#top"><img src="images/icon_top.png" width="50" alt=""></a></div>
+      <!-- 롯데호텔 목록 -->
+      <section id="hotel_search">
+         <div class="nav_1">
+            <a href="#">홈</a>&gt;
+            <a href="#">호텔찾기</a>&gt;
+            <a href="#"><strong>지점찾기</strong></a>
+         </div>
+         <div class="h_title">
+            <h1><a href="sub-find.html">롯데호텔지점</a></h1>
+            <!-- <span class="line"></span> -->
+         </div>
+         <div id="sub_menu">
+            <ul id="navmenu">
+               <li class="on"><a href="#"><span>시그니엘</span></a>
+               </li>
+               <li class="on1"><a href="#"><span>롯데호텔 & 리조트</span></a>
+               </li>
+               <li class="on2"><a href="#"><span>롯데시티호텔</span></a>
+               </li>
+               <li class="on3"><a href="#"><span>롯데L7</span></a>
+               </li>
+               <li class="on4"><a href="#"><span>글로벌</span></a>
+               </li>
+            </ul>
+         </div>
+         
+         <div class="allhotel">
+            <ul class="branch1">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/seoul-signiel.jpg"
+                           width="265" alt="signiel">
+                     </a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>시그니엘서울</strong></a></p>
+                     <p><a href="#">서울특별시 송파구 올림픽로 300롯데월드타워</a></p>
+                     <p><a href="">+82-2-3213-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+               
+            </ul>
+            
+            <ul class="branch2 clear">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/lotte/seoul/main/181023-2-2000-mai-LTSE.jpg"
+                           width="265" alt="seoul"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔서울(MAIN TOWER)</strong></a></p>
+                     <p><a href="#">서울특별시 중구 을지로 30</a></p>
+                     <p><a href="">+82-2-771-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch2 clear">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/world-hotel.jpg"
+                           width="265" alt="world"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔월드</strong></a></p>
+                     <p><a href="#">서울특별시 송파구 올림픽로 240</a></p>
+                     <p><a href="">+82-2-419-7000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+               
+            </ul>
+            <ul class="branch2 clear">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/jeju-hotel.jpg"
+                           width="265" alt="jeju"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔제주</strong></a></p>
+                     <p><a href="#">제주특별자치도 서귀포시 중문관광로 72번길 35</a></p>
+                     <p><a href="">+82-64-731-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch2 clear">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/busan-hotel.jpg"
+                           width="265" alt="busan"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔부산</strong></a></p>
+                     <p><a href="#">부산광역시 부산진구 가야대로 772</a></p>
+                     <p><a href="#">+82-51-810-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch2 clear">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/ulsan-hotel.jpg"
+                           width="265" alt="busan"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔울산</strong></a></p>
+                     <p><a href="#">울산광역시 남구 삼산로 282</a></p>
+                     <p><a href="">+82-52-960-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            
+            <ul class="branch2 clear">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/jeju-resort.jpg"
+                           width="265" alt="resortjeju"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데리조트제주</strong></a></p>
+                     <p><a href="#">제주특별자치도 서귀포시 색달중앙로 252번길 124</a></p>
+                     <p><a href="">+82-52-513-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch2 clear">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/sokcho-resort.jpg"
+                           width="265" alt="resortsokcho"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데리조트속초</strong></a></p>
+                     <p><a href="#">강원도 속초시 대포항길 186</a></p>
+                     <p><a href="#">+82-33-634-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch2 clear">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/buyeo-resort.jpg"
+                           width="265" alt="resortbuyeo"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데리조트부여</strong></a></p>
+                     <p><a href="#">충청남도 부여군 규암면 백제문로 400(합정로 578)</a></p>
+                     <p><a href="">+82-22-911-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            
+            <ul class="branch3 clear">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/mapo-city.jpg"
+                           width="265" alt="citymapo"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데시티호텔마포</strong></a></p>
+                     <p><a href="#">서울시 마포구 마포대로 109</a></p>
+                     <p><a href="">+82-2-6009-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch3 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/gimpo-city.jpg"
+                           width="265" alt="cityairport"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데시티호텔김포공항</strong></a></p>
+                     <p><a href="#">서울시 강서구 하늘길 38 </a></p>
+                     <p><a href="">+82-2-6116-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch3 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/guro-city.jpg"
+                           width="265" alt="citygoro"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데시티호텔구로</strong></a></p>
+                     <p><a href="#">서울시 구로구 디지털로 300</a></p>
+                     <p><a href="">+82-2-6210-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch3 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/myeongdong-city.jpg"
+                           width="265" alt="citymd"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데시티호텔명동</strong></a></p>
+                     <p><a href="#">서울특별시 중구 심일대로 362</a></p>
+                     <p><a href="">+82-2-6112-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch3 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/jeju-city.jpg"
+                           width="265" alt="cityjeju"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데시티호텔제주</strong></a></p>
+                     <p><a href="#">제주도 제주시 도령로 83</a></p>
+                     <p><a href="">+82-64-730-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch3 clear">
+               <li>
+                  <div>
+                     <a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/ulsan-city.jpg"
+                           width="265" alt="cityalsan"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데시티호텔울산</strong></a></p>
+                     <p><a href="#">울산광역시 남구 삼산로 204</a></p>
+                     <p><a href="">+82-52-990-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch3 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/daejeon-city.jpg"
+                           width="265" alt="citydaejeon"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데시티호텔대전</strong></a></p>
+                     <p><a href="#">대전광역시 유성구 엑스포로 123번길 33</a></p>
+                     <p><a href="">+82-42-333-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            
+            <ul class="branch4">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/myeongdong-l7.jpg"
+                           width="265" alt="L7md"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>L7명동</strong></a></p>
+                     <p><a href="#">서울특별시 중구 퇴계로 137(충무로2가 62-12)</a></p>
+                     <p><a href="">+82-2-6310-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch4 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/gangnam-l7.jpg"
+                           width="265" alt="L7강남"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>L7강남</strong></a></p>
+                     <p><a href="#">서울특별시 강남구 테헤란로 415(삼성동 142-41)</a></p>
+                     <p><a href="">+82-2-2011-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch4 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/hongdae-l7.jpg"
+                           width="265" alt="citymd"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>L7홍대</strong></a></p>
+                     <p><a href="#">서울특별시 마포구 양화로 141(동교동 160-5)</a></p>
+                     <p><a href="">+82-2-2289-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            
+            <ul class="branch5 clear">
+               <li>
+                  <div>
+                     <a href="#">
+                     <img src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/guam-hotel.jpg"
+                     width="265" alt="globalguam"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔괌(미국)</strong></a></p>
+                     <p><a href="#">185 Gun Beach Road Barrigada, Guam 96913,USA</a></p>
+                     <p><a href="">+1-671-646-6811</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch5 clear">
+               <li>
+                  <div>
+                     <a href="#">
+                     <img src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/newyork-hotel.jpg"
+                     width="265" alt="newyork"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데뉴욕팰리스(미국)</strong></a></p>
+                     <p><a href="#">455 MADISON AVENUE AT 50TH STREET NEW YORK</a></p>
+                     <p><a href="">+82-2-2289-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch5 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/moscow-hotel.jpg"
+                           width="265" alt="moscow"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔모스크바[러시아]</strong></a></p>
+                     <p><a href="#">2 Bld., 8 Novinskiy Blvd., Moscow, Russia, 121099</a></p>
+                     <p><a href="">+7 495-745-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch5 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/stpetersburg-hotel.jpg"
+                           width="265" alt="saint-peter"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔상트페테르부르크[러시아]</strong></a></p>
+                     <p><a href="#">2, Antonenko lane, Saint-Petersburg, Russia </a></p>
+                     <p><a href="">+7-812-336-10-00</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch5 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/vladivostok-hotel.jpg"
+                           width="265" alt="vladi"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔블라디보스토크[러시아]</strong></a></p>
+                     <p><a href="#">29 Semyonovskaya st., Vladivostok, 690091</a></p>
+                     <p><a href="">+7-423-240-22-33</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch5 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/samara-hotel.jpg"
+                           width="265" alt="samara"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔사마라[러시아]</strong></a></p>
+                     <p><a href="#">110, Samarskaya street, Samara</a></p>
+                     <p><a href="">+7-846-920-10-00</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch5 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/arai-resort.jpg"
+                           width="265" alt="arai"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데아라이리조트[일본]</strong></a></p>
+                     <p><a href="#">일본 니가타현 묘코시 료젠지 1966, 롯데아라이리조트</a></p>
+                     <p><a href="">+81-255-75-1100</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch5 clear">
+                  <li>
+                     <div><a href="#"><img
+                              src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/yangon-hotel.jpg"
+                              width="265" alt="yangon"></a>
+                     </div>
+                     <div class="text">
+                        <p><a href="#"><strong>롯데호텔양곤[미얀마]</strong></a></p>
+                        <p><a href="#">No. 82, Sin Phyu Shin Avenue, Pyay Road, 6½ Mile</a></p>
+                        <p><a href="">+7-846-920-10-00</a></p>
+                        <p><a href="#" id="button">예약하기</a></p>
+                     </div>
+                  </li>
+               </ul>
+            <ul class="branch5 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/hanoi-hotel.jpg"
+                           width="265" alt="hanoi"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔하노이[베트남]</strong></a></p>
+                     <p><a href="#">No. 54, Lieu Giai St. Cong Vi Ward. Ba Dinh, Hanoi</a></p>
+                     <p><a href="">+84-24-3333-1000</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch5 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/saigon-hotel.jpg"
+                           width="265" alt="saigon"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데레전드호텔사이공[베트남]</strong></a></p>
+                     <p><a href="#">2A-4A Ton Duc Thang Street District 1, Ho Chi Minh</a></p>
+                     <p><a href="">+84-28-3823-3333</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+            <ul class="branch5 clear">
+               <li>
+                  <div><a href="#"><img
+                           src="https://www.lottehotel.com/content/dam/lotte-hotel/global/common/company/tashkentpalace-city.jpg"
+                           width="265" alt="tashkent"></a>
+                  </div>
+                  <div class="text">
+                     <p><a href="#"><strong>롯데호텔타슈켄트팰리스[우즈벡]</strong></a></p>
+                     <p><a href="#">56,Buyuk Turon Street, Tashkent, 100029, Uzbekistan</a></p>
+                     <p><a href="">+998-78-120-58-00</a></p>
+                     <p><a href="#" id="button">예약하기</a></p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+   </div>
+   <!-- footer -->
+   <footer>
+         <div class="footer_boxline">
+         <div class="footer_left">
+            <h2>Lotte SNS</h2>
+            <ul class="sns_icon">
+               <li><a href="#"><img src="images/facebook.png" alt="" width="50"></a></li>
+               <li><a href="#"><img src="images/twitter.png" alt="" width="50"></a></li>
+               <li><a href="#"><img src="images/skype.png" alt="" width="50"></a></li>
+               <li><a href="#"><img src="images/utube.png" alt="" width="50"></a></li>
+               <li><a href="#"><img src="images/pinterest.png" alt="" width="50"></a></li>
+               <li><a href="#"><img src="images/google+.png" alt="" width="50"></a></li>
+               <li><a href="#"><img src="images/insta.png" alt="" width="50"></a></li>
+            </ul>
+            <span class="footer_line"></span>
+            <h3>모바일 앱 다운로드</h3>
+            <ul class="down_icon">
+               <li><a href="#"><img src="images/appstore.png" alt="" width="165"></a></li>
+               <li><a href="#"><img src="images/android.png" alt="" width="160"></a></li>
+            </ul>
+            <span class="footer_line"></span>
+            <h3>HOTEL LOTTE</h3>
+            <p><a href="http://www.lottehotel.com">www.lottehotel.com</a></p>
+
+         </div>
+         <div class="footer_right">
+            <ul class="f_rup">
+               <li><a href="#"><span>호텔찾기</span></a></li>
+               <li ><a href="#">시그니엘</a></li>
+               <li ><a href="#">롯데시티호텔</a></li>
+               <li><a href="#">롯데호텔&리조트</a></li>
+               <li><a href="#">L7호텔</a></li>
+            </ul>
+            <ul class="f_rup">
+               <li><a href="#"><span>프로모션</span></a></li>
+               <li><a href="#">호텔패키지</a></li>
+               <li><a href="#">룸 프로모션</a></li>
+               <li><a href="#">호텔이벤트</a></li>
+               <li><a href="#">스페셜 딜</a></li>
+            </ul>
+            <ul class="f_rdwn">
+               <li><a href="#"><span>웨딩&컨벤션</span></a></li>
+               <li><a href="#">호텔웨딩</a></li>
+               <li><a href="#">호텔컨벤션</a></li>
+            </ul>
+            <ul class="f_rdwn">
+               <li><a href="#"><span>호텔소개</span></a></li>
+               <li><a href="#">롯데호텔스토리</a></li>
+               <li><a href="#">브랜드소개</a></li>
+               <li><a href="#">뉴스</a></li>
+               <li><a href="#">채용</a></li>
+            </ul>
+         </div>
+      </div>
+         <div class="footer_btm">
+            <p><a href="#">개인정보처리방침 | 영상정보처리기기운영·관리방침 | 이용약관 | 롯데호텔 | 리워즈 | 회원약관 | 대표이사 김정환 | 사업자등록번호 104-81-25980 | 통신판매신고번호 중구02802호 |</a></p>
+            <p>
+               &copy;2018 CopyRight HOTEL LOTTE ALL RIGHT RESERVED.
+            </p>
+         </div>
+      
+      </footer>
+
+</body>
+
+</html>

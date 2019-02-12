@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- 나눔고딕 웹폰트 추가 -->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+   <!--Noto serif 웹폰트 추가 -->
+   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+   <!--나눔명조 웹폰트 추가-->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Serif+SC" rel="stylesheet">
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+   </script>
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <!-- 사용자 자바스크립트 -->
+   <script src="js/reserv.js"></script>
+   <script src="js/sub.js"></script>
+   <!-- css -->
+   <link rel="stylesheet" href="css/reserv.css">
+   <!-- <link rel="stylesheet" href="css/subcomp.css"> -->
+
+   <link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+   <script src="dist/js/datepicker.min.js"></script>
+
+   <title>롯데호텔 예약하기</title>
+   <link rel="stylesheet" href="css/kendo.common.min.css" />
+   <link rel="stylesheet" href="css/kendo.default.min.css" />
+   <link rel="stylesheet" href="css/kendo.default.mobile.min.css" />
+   <!-- <link rel="stylesheet" href="css/meterial_user.css"> -->
+
+   <script src="js/kendo.all.min.js"></script>
+
+   <!-- 이미지슬라이더 -->
+   <!-- <script src="js/slider.js"></script> -->
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+   <style>
+      /* .k-calendar td.k-state-selected .k-link{
+             background: green;
+         }
+         .k-calendar td.k-state-selected .k-link{
+             border-color: black!important;
+         } */
+   </style>
+
+</head>
+
+<body>
+<header>
+   <!-- 로고 -->
+   <div id="main_header">
+      <h1><a href="./"><img src="images/logo-test1.png" alt="main-logo" width="100"></a>
+      </h1>
+      <!-- 상단 메뉴 -->
+      <div id="user-nav">
+         <ul id="r_usernav">
+            <li><a href="#" class="">LOGIN </a></li>
+            <li><a href="#" class="">JOIN</a></li>
+            <li><a href="#" class="">MEMBERSHIP</a></li>
+            <li><a href="#" class="">RESERVATION</a></li>
+         </ul>
+         <div id="l_usernav">
+            <ul>
+
+               <li><select name="language" class="language">
+                     <option value="Korean">KOREAN</option>
+                     <option value="English">ENGLISH</option>
+                     <option value="Japanese">日本語</option>
+                     <option value="Chinese">中本語</option>
+                  </select></li>
+            </ul>
+         </div>
+         <ul id="clear">
+            <li></li>
+         </ul>
+      </div>
+
+      <!-- 메인메뉴 -->
+      <div id="gnb">
+         <ul class="depth1">
+            <li><a href="sub-find.html">호텔찾기</a>
+               <ul class="depth2">
+                  <li><a href="#">시그니엘</a></li>
+                  <li><a href="#">롯데시티호텔</a></li>
+                  <li><a href="#">롯데호텔&리조트</a></li>
+                  <li><a href="#">L7호텔</a></li>
+                  <li class="menu_point"><a href="reserv.html">예약하기</a></li>
+               </ul>
+            </li>
+            <li><a href="#">프로모션</a>
+               <ul class="depth2">
+                  <li><a href="#">호텔패키지</a></li>
+                  <li><a href="#">룸 프로모션</a></li>
+                  <li><a href="#">호텔이벤트</a></li>
+                  <li><a href="#">스페셜 딜</a></li>
+               </ul>
+            </li>
+            <li><a href="#">웨딩&컨벤션</a>
+               <ul class="depth2">
+                  <li><a href="#">호텔웨딩</a>
+                  </li>
+                  <li><a href="#">호텔컨벤션</a>
+                  </li>
+            </li>
+         </ul>
+         </li>
+         <li><a href="./company.html">호텔소개</a>
+            <ul class="depth2">
+               <li><a href="./company.html">롯데호텔스토리</a></li>
+               <li><a href="#">브랜드소개</a></li>
+               <li><a href="#">뉴스</a></li>
+               <li><a href="#">채용</a></li>
+            </ul>
+         </li>
+         </ul>
+
+      </div>
+   </div>
+</header>
+   <!-- 서브 비쥬얼 배너 -->
+   <section id="sub_banner">
+      <!-- 이미지 슬라이더 -->
+      <div class="slider">
+         <div class="bxslider">
+            <div><img src="images/sub-banner1.png" alt="배너1"></div>
+            <div><img src="images/sub-banner2.png" alt="배너2"></div>
+            <div><img src="images/sub-banner3.png" alt="배너3"></div>
+            <div><img src="images/sub-banner4.png" alt="배너4"></div>
+            <div><img src="images/sub-banner5.png" alt="배너5"></div>
+            <div><img src="images/sub-banner6.png" alt="배너6"></div>
+            <div><img src="images/sub-banner7.png" alt="배너7"></div>
+         </div>
+         <div class="clear"></div>
+      </div>
+
+   </section>
+   <!-- 호텔선택, 일정 -->
+   <section id="hotel_choice">
+   <div id="fixed_top"><a href="#top"><img src="images/icon_top2.png" width="50" alt=""></a></div>
+      <h2>호텔 선택</h2>
+      <ul class="contry_menu">
+         <li><a href="#">한국</a></li>
+         <li><a href="#">미국</a></li>
+         <li><a href="#">러시아</a></li>
+         <li><a href="#">일본</a></li>
+         <li><a href="#">베트남</a></li>
+         <li><a href="#">미얀마</a></li>
+         <li><a href="#">우즈베키스탄</a></li>
+      </ul>
+      <div class="hotel_list">
+         <ul class="hotel_list1">
+            <li><a href="#">시그니엘 서울</a></li>
+            <li><a href="#">롯데호텔 서울</a></li>
+            <li><a href="#">롯데호텔 월드</a></li>
+            <li><a href="#">롯데호텔 제주</a></li>
+            <li><a href="#">롯데호텔 부산</a></li>
+            <li><a href="#">롯데호텔 울산</a></li>
+            <li><a href="#">롯데시티호텔 마포</a></li>
+            <li><a href="#">롯데시티호텔 김포공항</a></li>
+            <li><a href="#">롯데시티호텔 구로</a></li>
+            <li><a href="#">롯데시티호텔 명동</a></li>
+            <li><a href="#">롯데시티호텔 제주</a></li>
+            <li><a href="#">롯데시티호텔 대전</a></li>
+            <li><a href="#">롯데시티호텔 울산</a></li>
+            <li><a href="#">L7명동</li>
+            <li><a href="#">L7강남</li>
+            <li><a href="#">L7홍대</li>
+            <li><a href="#">롯데리조트 제주</li>
+            <li><a href="#">롯데리조트 속초</li>
+            <li><a href="#">롯데리조트 부여</li>
+         </ul>
+         <ul class="hotel_list2">
+            <li><a href="#">롯데호텔 괌</a></li>
+            <li><a href="#">롯데뉴욕팰리스</a></li>
+         </ul>
+         <ul class="hotel_list3">
+            <li><a href="#">롯데호텔 모스크바</a></li>
+            <li><a href="#">롯데호텔상트페테르부르크</a></li>
+            <li><a href="#">롯데호텔사마라</a></li>
+            <li><a href="#">롯데호텔블라디보스토크</a></li>
+         </ul>
+         <ul class="hotel_list4">
+            <li><a href="#">롯데아라이리조트</a></li>
+         </ul>
+         <ul class="hotel_list5">
+            <li><a href="#">롯데호텔 하노이</a></li>
+            <li><a href="#">롯데레전드호텔 사이공</a></li>
+         </ul>
+         <ul class="hotel_list6">
+            <li><a href="#">롯데호텔양곤</a></li>
+         </ul>
+         <ul class="hotel_list7">
+            <li><a href="#">롯데시티호텔타슈켄트팰리스</a></li>
+         </ul>
+      </div>
+
+      <div id="hotel_schedule">
+         <h2>일정 선택</h2>
+         <div class="line"></div>
+         <div id="example" style="text-align: center;">
+            <div class="demo-section k-content wide" style="display: inline-block;">
+               <h4>체크인 / 체크아웃</h4>
+               <div id="daterangepicker" title="daterangepicker"></div>
+            </div>
+         </div>
+         <div class="checkbtn">
+            <h4> 객실 및 투숙인원</h4>
+            <div>
+               <h5>객실</h5>
+               <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+               </select>
+            </div>
+            <div>
+               <h5>성인</h5>
+               <select>
+                  <option>1</option>
+                  <option>2</option>
+               </select>
+            </div>
+            <div>
+               <h5>어린이</h5>
+               <select>
+                  <option>0</option>
+                  <option>1</option>
+               </select>
+            </div>
+         </div>
+         <!-- <button class="miner1">-</button>
+            <div class="adult_num">성인<span>1</span></div>
+            <button class="plus1">+</button>
+            <button class="miner2">-</button>
+            <div class="kids_num">어린이<span>0</span></div>
+            <button class="plus2">+</button> -->
+         <button class="btnclick">예약하기</button>
+      </div>
+
+      <div class="attention">
+         <h2>롯데호텔 이용약관</h2>
+         <div class="line"></div>
+         <ol>
+            <li>1. 체크 인 시각은 오후 3시 입니다.</li>
+            <li>2. 체크 아웃 시각은 정오 12시 입니다</li>
+            <li>3. 고객이 확인되지 않거나 숙박 날짜에 예약을 취소 하는 경우 1박 요금이 보장 된 예약에 대해 부과 됩니다.</li>
+            <li>4. 예약취소 및 변경은 도착 날짜 하루 (24시간) 전까지 변경이 가능 합니다.</li>
+            <li>5. 당일 취소는 1박 요금 100% 부과 됩니다.</li>
+         </ol>
+      </div>
+      <div class="log_popup show">
+         <h3>LOTTE HOTEL MEMBERSHIP LOGIN</h3><br>
+         <table class="type1">
+            <caption>
+               <details>
+                  <summary>롯데 호텔 멤버쉽 로그인</summary>
+               </details>
+            </caption>
+            <colgroup>
+               <col style="width: 110px">
+               <col>
+            </colgroup>
+            <tbody>
+               <tr>
+                  <th><label for="txt1">아이디</label></th>
+                  <td><input type="text" id="txt1" placeholder="아이디를입력하세요"></td>
+               </tr>
+               <tr>
+                  <th><label for="txt2">비밀번호</label></th>
+                  <td><input type="text" id="txt2" placeholder="비밀번호를입력하세요"></td>
+            </tbody>
+         </table>
+         <p>아직 롯데호텔 멤버쉽 회원이 아니신가요?</p>
+         <button>회원가입</button>
+         <button class="btn_close">닫기</button>
+      </div>
+   </section>
+
+
+   <script>
+      $(function () {
+         //팝업상자 드래그 시키기
+         $('.log_popup').draggable(); /*이동가능*/
+
+         $('.btn_close').click(function () {
+            // $('.layer_popup').removeClass('show'); /*두개다 사용가능*/
+            $('.log_popup').hide(); /*두개다 사용가능*/
+         });
+
+
+         $("#daterangepicker").kendoDateRangePicker();
+      });
+   </script>
+</body>
+
+</html>
